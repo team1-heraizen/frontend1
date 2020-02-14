@@ -249,6 +249,7 @@ export class Statement1Component implements OnInit {
     this.faculty_data[ event.row]['deptId'], this.faculty_data[ event.row]['termNumber']).subscribe(res => {
       console.log(res['iamark'])
       this.tableData = res['iamark']
+    
       // let r = res['iamarks'];
       // this.maxMarks = r[0]['maxMarks']
       // this.obtainedMarks = r[0]['totalMarks']
